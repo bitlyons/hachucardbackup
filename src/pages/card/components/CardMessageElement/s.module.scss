@@ -1,0 +1,59 @@
+.cardMessage {
+  border-radius: 8px !important;
+  margin-bottom: 24px !important;
+  :global {
+    .ant-card-body {
+      border-radius: 7px;
+    }
+  }
+}
+
+.cardMessage:hover {
+  .cardMessageContent {
+    mask-image: linear-gradient(to bottom, #000000 100%, transparent 100%);
+    max-height: fit-content;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000000 100%,
+      transparent 100%
+    );
+  }
+}
+
+.cardMessageAuthor {
+  color: #999999;
+  font-size: 16px;
+  font-style: italic;
+  text-align: right;
+}
+
+.cardMessageContent {
+  margin-bottom: 24px;
+  mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+  max-height: 256px;
+  min-height: 256px;
+  overflow-y: hidden;
+  word-wrap: break-word;
+  -webkit-mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+  blockquote {
+    border-left: 4px solid rgba(153, 153, 153, 0.75);
+    padding-left: 16px;
+  }
+  code {
+    background: rgba(153, 153, 153, 0.25);
+    border-radius: 4px;
+    padding: 2px;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  pre {
+    background: rgba(153, 153, 153, 0.25);
+    border-radius: 8px;
+    padding: 16px;
+    > code {
+      background: transparent;
+    }
+  }
+}

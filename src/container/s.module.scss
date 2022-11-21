@@ -1,0 +1,57 @@
+.layout {
+  animation: fadeIn 0.25s ease-in-out;
+  min-height: 100vh !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* AntD Styling Override */
+:global {
+  b {
+    font-weight: 500 !important;
+  }
+
+  body {
+    > div#root {
+      background: transparent;
+      section {
+        background: transparent;
+        main,
+        footer {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  body[data-theme='dark'] {
+    background: #101010;
+    a:not(.ant-btn) {
+      color: #69b6ff;
+    }
+  }
+
+  body[data-theme='light'] {
+    background: #eeeeee;
+  }
+
+  .ant-card {
+    box-shadow: rgba(0, 0, 0, 0.125) 0 4px 6px -1px,
+      rgba(0, 0, 0, 0.125) 0 2px 4px -1px;
+  }
+
+  .ant-form-item-explain-error {
+    font-size: 12px;
+  }
+
+  .ant-modal {
+    top: 72px;
+  }
+}

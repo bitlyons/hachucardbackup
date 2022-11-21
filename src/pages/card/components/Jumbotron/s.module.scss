@@ -1,0 +1,36 @@
+.cardActions {
+  padding: 50px 0px 38px;
+  text-align: center;
+  > button,
+  > button:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid #dddddd;
+    color: #ffffff;
+    margin: 0px 12px;
+  }
+  > button:hover {
+    background: #ffffff;
+    border: 2px solid #dddddd;
+    color: #333333;
+  }
+  > span > button:disabled {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(221, 221, 221, 0.75);
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.jumbotron {
+  background: #328bde;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.175), 0 3px 6px rgba(0, 0, 0, 0.25);
+  margin-top: -64px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 600;
+  padding: 144px 0px 0px 0px;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}

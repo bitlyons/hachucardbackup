@@ -1,0 +1,14 @@
+.helpSection {
+  ol {
+    padding-inline-start: 8px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .helpSection {
+    margin-bottom: 24px !important;
+  }
+}
